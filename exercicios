@@ -1,0 +1,5 @@
+separa([],[],[]).
+separa([X|Cauda],[X|P],N) :- X >= 0, separa(Cauda,P,N).
+separa([X|Cauda],P,[X|N]) :- separa(Cauda,P,N).
+
+segundo([_,Y|_],Y).
